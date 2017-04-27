@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+
+% I normally use this to create user guides at work.
+
+\title{Simple Article}
+
+\usepackage{indentfirst}	% to indent first paragraph
+\usepackage{graphicx}	% for images
+\usepackage[margin=0.7in]{geometry}	% for margins
+\usepackage[utf8]{inputenc}	% encoding
+\usepackage[english]{babel}	% language
+\usepackage{color} % to enable colours
+\usepackage{comment} % for comments
+
+% for hyperlinks; colorlinks=true means change the text
+% colour rather than adding a colourful border
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=red]{hyperref} 	
+
+% to make sure section heads only start if there's space, otherwise
+% print on next page	
+\usepackage{needspace}
+
+% add float barriers to keep figures from being moved
+% http://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/latex/contrib/placeins/placeins-doc.pdf
+\usepackage{placeins}		
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+	
+	
+\section{Section}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt felis
+  non facilisis lacinia. Cras volutpat luctus elit tempus ornare. Vestibulum
+  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+  Nam sagittis auctor turpis. Phasellus sit amet quam ut dui iaculis aliquet eu
+  et ex. Pellentesque pretium, erat non luctus elementum, sapien quam egestas
+  risus, nec fringilla massa lorem tincidunt mauris. Cras in tincidunt dui, sit
+  amet mollis massa.
+
+  Url: \url{https://github.com/claudiusbr}
+
+  \hyperref[sec:Step2]{Link to List Anchor}.
+
+	
+\subsection{Subsection}
+
+  %\begin{figure}[ht!]
+  %	\begin{center}
+  %		\includegraphics[width=5in]{picture.JPG}
+  %	\end{center}
+  %	\caption{Caption}
+  %\end{figure}
+  %\FloatBarrier
+  
+  \hyperlink{LinkToSubsection}{Link to Subsection Anchor}.
+  
+  Example of itemized list:
+  \begin{itemize}
+          \label{sec:Step2}
+          \item
+            List Item - also an anchor
+          \item
+            Another List Item
+  \end{itemize}	
+	
+
+\hypertarget{LinkToSubsection}{
+        % the asterisk after subsection hides it from the contents page
+	\subsubsection*{Anchor Sub-Subsection not listed in contents page}
+}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
