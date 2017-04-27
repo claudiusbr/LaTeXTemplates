@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+
+\title{Undergrad Essay}
+\date{\today}
+\author{Me}
+
+\usepackage{indentfirst}	% to indent first paragraph
+\usepackage[margin=0.7in]{geometry}	% for margins
+\usepackage[english]{babel}	% language
+\usepackage{color}	% to specify colours
+
+% change the name of 'thebibliography' from References to Bibliography
+% has to be done with 'addto' because I'm using the babel package
+\addto\captionsenglish{%
+  \renewcommand{\refname}{Bibliography}%
+}
+
+% for hyperlinks; colorlinks=true means change the text
+% colour rather than adding a colourful border
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=red,citecolor=black]{hyperref} 	
+
+% paragraph spacing
+\setlength{\parskip}{\baselineskip}%
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis velit
+id consequat eleifend. Vestibulum ultricies fermentum rhoncus. Etiam tristique
+eros in odio commodo iaculis. Duis sed orci ac tortor gravida convallis vel sit
+amet sem. Vivamus rhoncus hendrerit congue. Duis congue non lorem at tristique.
+Aenean facilisis eget felis in mattis. Phasellus in leo vel erat varius
+viverra. Mauris vestibulum purus nisi, et pretium odio interdum ut. Fusce et
+efficitur sapien. Curabitur sit amet porta ante, in placerat odio. In
+fringilla, magna et hendrerit tincidunt, nisl erat sodales mauris, sit amet
+blandit mi arcu vitae ipsum.
+
+Ut ornare lorem aliquet lobortis scelerisque. Donec laoreet felis at dui porta,
+a tempus massa tincidunt \cite{citation}. Donec eleifend id ante sed aliquet. Aenean lectus
+turpis, cursus dapibus sapien ac, hendrerit imperdiet nunc. Aenean venenatis mi
+vel dolor efficitur laoreet. Curabitur est odio, scelerisque ut consectetur ac,
+finibus sit amet elit. Pellentesque condimentum odio id blandit sagittis.
+Quisque non erat leo. Curabitur tempor pharetra iaculis.
+
+
+\clearpage
+
+% increase the number between {} to the number of references
+% you will add
+\begin{thebibliography}{5}
+
+\bibitem{citation}
+  Author, A., 2012. 
+  \textit{Book Title}.
+  Publisher, Date of Publishing. 
+
+\end{thebibliography}
+
+\end{document}
