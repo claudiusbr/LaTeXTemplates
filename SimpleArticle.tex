@@ -6,7 +6,7 @@
 
 \usepackage{indentfirst}	% to indent first paragraph
 \usepackage{graphicx}	% for images
-\usepackage[margin=0.7in]{geometry}	% for margins
+\usepackage[lmargin=2.00cm,tmargin=3.00cm,rmargin=3.00cm,bmargin=2.00cm,]{geometry}	% for margins
 \usepackage[utf8]{inputenc}	% encoding
 \usepackage[english]{babel}	% language
 \usepackage{color} % to enable colours
@@ -23,6 +23,10 @@
 % add float barriers to keep figures from being moved
 % http://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/latex/contrib/placeins/placeins-doc.pdf
 \usepackage{placeins}		
+
+% for lists and margins
+\usepackage{enumitem}
+
 
 
 \begin{document}
@@ -48,12 +52,29 @@
 
 	
 \subsection{Subsection}
-
+  % a figure with a caption
   %\begin{figure}[ht!]
   %	\begin{center}
   %		\includegraphics[width=5in]{picture.JPG}
   %	\end{center}
   %	\caption{Caption}
+  %\end{figure}
+  %\FloatBarrier
+
+  % two figures side by side with centered captions
+  %\begin{figure}[ht]
+  %  \begin{minipage}{0.45\textwidth}
+  %    \centering
+  %    \raisebox{-0.5\height}{\includegraphics{img/figure1.jpg}}
+  %    \caption{Caption}
+  %  \end{minipage}
+  %  \hspace{2.00cm}
+  %  \hfill
+  %  \begin{minipage}{0.45\textwidth}
+  %    \centering
+  %    \raisebox{-0.5\height}{\includegraphics{img/figure2.jpg}}
+  %    \caption{Caption}
+  %  \end{minipage}
   %\end{figure}
   %\FloatBarrier
   
