@@ -9,12 +9,21 @@
 \usepackage[lmargin=2.00cm,tmargin=3.00cm,rmargin=3.00cm,bmargin=2.00cm,]{geometry}	% for margins
 \usepackage[utf8]{inputenc}	% encoding
 \usepackage[english]{babel}	% language
-\usepackage{color} % to enable colours
+\usepackage{xcolor} % to enable colours
 \usepackage{comment} % for comments
+
+% this is an example on how to define your own colours
+% if you prefer, use the 68 definitions of dvipsnames
+\definecolor{sepia}{RGB}{103, 24, 0}
 
 % for hyperlinks; colorlinks=true means change the text
 % colour rather than adding a colourful border
-\usepackage[colorlinks=true,linkcolor=blue,urlcolor=red]{hyperref} 	
+\usepackage{hyperref} 	
+\hypersetup{
+  colorlinks=true,
+  linkcolor=sepia,
+  urlcolor=blue,
+}
 
 % to make sure section heads only start if there's space, otherwise
 % print on next page	
