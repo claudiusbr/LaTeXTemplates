@@ -1,3 +1,4 @@
+
 \documentclass[a4paper,12pt]{article}
 
 % I normally use this to create user guides at work.
@@ -6,11 +7,14 @@
 
 \usepackage{indentfirst}	% to indent first paragraph
 \usepackage{graphicx}	% for images
-\usepackage[lmargin=2.00cm,tmargin=3.00cm,rmargin=3.00cm,bmargin=2.00cm,]{geometry}	% for margins
+\usepackage{caption}    % this removes the colon if there's no text on caption
+\usepackage[margin=2cm]{geometry}	% for margins
 \usepackage[utf8]{inputenc}	% encoding
 \usepackage[english]{babel}	% language
 \usepackage{xcolor} % to enable colours
 \usepackage{comment} % for comments
+
+\usepackage{lipsum}
 
 % this is an example on how to define your own colours
 % if you prefer, use the 68 definitions of dvipsnames
@@ -29,13 +33,18 @@
 % print on next page	
 \usepackage{needspace}
 
+% easy way to do frames
+\usepackage{framed}
+
 % add float barriers to keep figures from being moved
 % http://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/latex/contrib/placeins/placeins-doc.pdf
 \usepackage{placeins}		
 
+% for text wrap
+\usepackage{wrapfig}
+
 % for lists and margins
 \usepackage{enumitem}
-
 
 
 \begin{document}
