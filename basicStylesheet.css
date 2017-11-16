@@ -1,0 +1,27 @@
+html {
+  background-size: 100%;
+  font-family: georgia,verdana,arial;
+  color: darkslategray;
+  line-height: 20px;
+}
+
+h1 {
+  color: #216099;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+code {
+  font-size: 1.2em;
+  background: lavender;
+  padding: 0 4px;
+  border-radius: 5px;
+}
+
+li {
+  padding: 3px;
+}
