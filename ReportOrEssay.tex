@@ -1,12 +1,12 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This is a template for an academic-ish report
 %
 % it uses bibtex and explicitly biber for bibliography, so to compile
 % the report you should run something like:
-% `pdflatex <this>; biber <this.aux>; pdflatex <this>; pdflatex <this>;
+% `pdflatex <this> && biber <this.bcf> && pdflatex <this> && pdflatex <this>`
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,12pt]{article}
 
@@ -21,6 +21,7 @@
 \usepackage[english]{babel}	% language
 \usepackage{color}	% to specify colours
 
+\usepackage{lipsum}
 
 \definecolor{sepia}{RGB}{103, 24, 0}
 
