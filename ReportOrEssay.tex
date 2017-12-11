@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+
+% for manual date positioning
+\usepackage{datetime}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+
+\usepackage{setspace}   % to change line spacing within a paragraph
+\usepackage{indentfirst}	% to indent first paragraph
+\usepackage{graphbox}   % to give includegraph the align option
+\usepackage[lmargin=2.00cm,tmargin=3.00cm,rmargin=3.00cm,bmargin=2.00cm,]{geometry}	% for margins
+\usepackage[english]{babel}	% language
+\usepackage{color}	% to specify colours
+
+
+\definecolor{sepia}{RGB}{103, 24, 0}
+
+% for hyperlinks; colorlinks=true means change the text
+% colour rather than adding a colourful border
+\usepackage{hyperref} 	
+\hypersetup{
+  colorlinks=true,
+  linkcolor=sepia,
+  urlcolor=blue,
+}
+
+% paragraph spacing
+\setlength{\parskip}{\baselineskip}%
+
+% for lists and margins
+\usepackage{enumitem}
+
+% for the author year referencing
+\usepackage[citestyle=ieee,style=authoryear,backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%\input{./contents/title_page.tex}
+
+\newpage
+
+\pagenumbering{roman}
+
+%\input{./contents/abstract.tex}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+
+%\input{./contents/introduction.tex}
+
+\newpage
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
