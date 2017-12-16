@@ -41,7 +41,8 @@
 \usepackage{enumitem}
 
 % for the author year referencing
-\usepackage[citestyle=ieee,style=authoryear,backend=biber]{biblatex}
+\usepackage[citestyle=ieee,style=authoryear,backend=biber,maxcitenames=1,maxbibnames=20]{biblatex}
+\DeclareNameAlias{author}{last-first}
 \addbibresource{bibliography.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 \setlength\bibitemsep{2\itemsep}
