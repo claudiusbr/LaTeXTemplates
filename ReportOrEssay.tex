@@ -40,9 +40,10 @@
 % for lists and margins
 \usepackage{enumitem}
 
-% for the author year referencing
+% for the author year referencing style, using biber as backend, in citations keep the 
+% number of authors to one, then append 'et al.', in bibliography show all authors...
 \usepackage[citestyle=ieee,style=authoryear,backend=biber,maxcitenames=1,maxbibnames=20]{biblatex}
-\DeclareNameAlias{author}{last-first}
+\DeclareNameAlias{author}{last-first} % ... with all authors in the `surname, name' format
 \addbibresource{bibliography.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 \setlength\bibitemsep{2\itemsep}
