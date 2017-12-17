@@ -18,7 +18,7 @@
 \usepackage{indentfirst}	% to indent first paragraph
 \usepackage{graphbox}   % to give includegraph the align option
 \usepackage[lmargin=2.00cm,tmargin=3.00cm,rmargin=3.00cm,bmargin=2.00cm,]{geometry}	% for margins
-\usepackage[english]{babel}	% language
+\usepackage[british,english]{babel}	% language
 \usepackage{color}	% to specify colours
 
 \usepackage{lipsum}
@@ -42,12 +42,16 @@
 
 % for the author year referencing style, using biber as backend, in citations keep the 
 % number of authors to one, then append 'et al.', in bibliography show all authors...
-\usepackage[citestyle=ieee,style=authoryear,backend=biber,maxcitenames=1,maxbibnames=20]{biblatex}
+\usepackage[citestyle=ieee,style=authoryear,backend=biber,maxcitenames=1,maxbibnames=20,urldate=short]{biblatex}
 \DeclareNameAlias{author}{last-first} % ... with all authors in the `surname, name' format
 \addbibresource{bibliography.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
-\setlength\bibitemsep{2\itemsep}
+\DeclareFieldFormat{urldate}{%
+  (visited on: \thefield{urlday}\addspace%
+  \mkbibmonth{\thefield{urlmonth}}\addspace%
+  \thefield{urlyear}\isdot)}
 
+%\setlength\bibitemsep{2\itemsep} % more space between bibliography sources
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
