@@ -44,6 +44,11 @@
 % for lists and margins
 \usepackage{enumitem}
 
+% this makes sure that captions only include the `:' character if your
+% caption has extra text in it
+\usepackage{caption}
+\captionsetup[table]{name=Table}
+
 % for the author year referencing style, using biber as backend, in citations keep the 
 % number of authors to one, then append 'et al.', in bibliography show all authors...
 \usepackage[citestyle=ieee,style=authoryear,backend=biber,maxcitenames=1,maxbibnames=20,urldate=short]{biblatex}
