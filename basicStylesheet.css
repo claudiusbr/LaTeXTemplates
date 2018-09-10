@@ -15,9 +15,15 @@ h1 {
   padding: 1em;
 }
 
+pre  {
+  padding: 1em;
+  background-color: lavender;
+  overflow: scroll;
+}
+
 code {
   font-size: 1.2em;
-  background: lavender;
+  background-color: lavender;
   padding: 0 4px;
   border-radius: 5px;
 }
