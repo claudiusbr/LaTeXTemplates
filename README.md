@@ -12,10 +12,15 @@ just haven't had the time to research them.
 I am using these mainly with converted Markdown files. The steps normally
 involve, roughly:
 
-- copy the contents of the [basicHTMLHeader.html](./basicHTMLHeader.html) to
+- copy the [basicStyleSheet.css](./basicStyleSheet.css) to the folder where the
+  final html file will be. e.g.:
+
+    $ cp basicStyleSheet.css $HOME/newProject/
+
+- copy the contents of the [basicHTMLHeaders.html](./basicHTMLHeaders.html) to
   the empty HTML file which I want to compile from markdown. E.g.:
 
-    $ cp basicHTMLHeader.html $HOME/newProject/my-html-file.html
+    $ cp basicHTMLHeaders.html $HOME/newProject/my-html-file.html
   
 - convert the markdown file to html, and append it to the file created above.
   E.g. (using [Pandoc](http://pandoc.org/index.html)):
