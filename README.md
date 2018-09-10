@@ -12,7 +12,7 @@ just haven't had the time to research them.
 I am using these mainly with converted Markdown files. The steps normally
 involve, roughly:
 
-- copy the [basicStyleSheet.css](./basicStyleSheet.css) to the folder where the
+- copy the [basicStyleSheet.css](./basicStylesheet.css) to the folder where the
   final html file will be. e.g.:
 
     $ cp basicStyleSheet.css $HOME/newProject/
