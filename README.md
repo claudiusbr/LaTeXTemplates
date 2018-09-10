@@ -1,4 +1,4 @@
-# LaTeXTemplates
+# Document Templates
 Some templates for LaTeX, CSS and other styling/markup which I use more regularly.
 
 ## How to use
