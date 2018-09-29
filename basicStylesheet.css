@@ -17,14 +17,14 @@ h1 {
 
 pre  {
   padding: 1em;
-  background-color: lavender;
+  background-color: #f4f4f4;
   overflow: scroll;
 }
 
 code {
-  font-size: 1.2em;
-  background-color: lavender;
-  padding: 0 4px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  color: #267474;
   border-radius: 5px;
 }
 
